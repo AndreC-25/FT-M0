@@ -1,9 +1,26 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url(https://images7.alphacoders.com/411/411820.jpg);
+    color: white;
+    position: relative;
+}
+
 h1 {
     color: dodgerblue;
 }
+
 img {
     width: 400px;
 }
+
+a {
+    color: greenyellow;
+}
+
 #thirdDiv {
     height: 600px;
     width: 500px;
@@ -11,6 +28,7 @@ img {
     padding: 50px;
     border: 5px solid red;
 }
+
 #spanId {
     font-size: 18px;
     margin: 50px;
