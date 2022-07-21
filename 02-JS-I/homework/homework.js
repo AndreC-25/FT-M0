@@ -60,71 +60,56 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
-    return true;
-  } else {
-    return false;
-  }
+  if (x == y) return true;
+  else return false;
+  
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var STR1 = str1.length
-  var STR2 = str2.length
-
-  if (STR1 == STR2) {
-    return true;
-  } else {
-    return false;
-  }
+    return str1.length === str2.length
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
-  // Tu código:
-  if (num < 90) {
-    return true;
-  } else {
-    return false;
-  }
+  // Tu código: 
+
+  return num < 90;
+
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num > 50) {
-    return true;
-  } else {
-    return false;
-  }
+  
+  return num > 50;
+
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+
   return x % y;
+
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return num % 2 == 0;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 1) {
+  if  (num % 2 == 1) {
     return true;
   } else {
     return false;
@@ -135,41 +120,34 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  let alCuadrado = Math.pow(num, 2);
+  return num ** 2;
 
-  return alCuadrado;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  let alCubo = Math.pow(num, 3);
-
-  return alCubo;
+  return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  let potencia = Math.pow(num, exponent);
-
-  return potencia;
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  let enteroMasProx = Math.round(num);
+  return Math.round(num);
 
-  return enteroMasProx;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  let redondear = Math.ceil(num);
+  return Math.ceil(num);
 
-  return redondear;
 }
 
 function numeroRandom() {
@@ -183,13 +161,9 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return 'Es positivo';
-  } else if (numero < 0) {
-    return 'Es negativo';
-  } else {
-    return false;
-  }
+  if (numero > 0) return 'Es positivo';
+  else if (numero < 0) return 'Es negativo';
+  else return false;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -255,12 +229,9 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
-    return('Es vocal')
-   } else if (letra.length != 1) {
-   return('Dato incorrecto')
-   }
-
+  if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') return 'Es vocal';
+  else if (letra.length != 1) return'Dato incorrecto';
+  
 }
 
 
