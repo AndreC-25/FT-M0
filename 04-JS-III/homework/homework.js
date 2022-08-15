@@ -277,13 +277,13 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
 
-  var nuevoArray = [];
-  for (let i = 0; i < 10; i++) {
-      if (i === 5) continue
-      else {
-      numero = numero + 2;
-      nuevoArray.push(numero)}
-  } return nuevoArray
+    var nuevoArray = [];
+    for (let i = 0; i < 10; i++) {
+        if (i === 5) continue
+        else {
+        numero = numero + 2;
+        nuevoArray.push(numero)}
+    } return nuevoArray
 
 }
 
