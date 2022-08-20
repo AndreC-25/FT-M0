@@ -42,21 +42,21 @@ var edadesAlumnos = [20, 23, 22, 20, 24, 25];
 // }
 
 
-alumnos.forEach(
+alumnos.forEach(                                //No se
         function(elemento, i) {
                 // console.log('hola desde el forEach ' + elemento + ' ' + i)
         }
 )
 
 
-var resultadoMap = alumnos.map( function(alumno, i) {       
+var resultadoMap = alumnos.map( function(alumno, i) {                     //Obtengo un array      
         return 'Hola desde Map ' + alumno + ' ' + i      
 } )
 
 // console.log(resultadoMap)
 
 
-var resultadoReduce = edadesAlumnos.reduce( function(acumulador, item, i) {
+var resultadoReduce = edadesAlumnos.reduce( function(acumulador, item, i) {    //Obtengo una valor
         if(item === 23 || i === 0) {
 
         } else {
